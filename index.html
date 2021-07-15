@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://at.alicdn.com/t/font_2677935_blbcusea29n.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="range-wrap">
+            <input type="range" min="0" max="20" id="range" />
+        </div>
+
+        <div class="color-group">
+            <button id="white"></button>
+            <button id="black"></button>
+            <button id="red"></button>
+            <button id="blue"></button>
+            <button id="yellow"></button>
+            <button id="green"></button>
+            <button id="grey"></button>
+        </div>
+
+        <div class="tools">
+            <button type="button" id="画笔">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-huabi"></use>
+                </svg>
+                </button>
+            <button type="button" id="橡皮">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-xiangpi"></use>
+                                </svg>
+            </button>
+            <button type="button"  id="清除">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-qingchu"></use>
+                                </svg>
+            </button>
+            <button type="button" id="撤回">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-chehui2"></use>
+                                </svg>
+            </button>
+            <button type="button" id="保存">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-baocun"></use>
+                                </svg>
+            </button>
+        </div>
+
+
+    </div>
+
+    <canvas id="canvas" width="100" height="100"></div>
+        <script src="./main.js"></script>
+</body>
+
+</html>

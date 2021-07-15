@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    width: 1.5em; height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+#canvas{
+    background: white;
+    display: block;
+    cursor: crosshair;
+}
+#wrapper{
+
+
+}
+.color-group{
+    position: fixed;
+    width: 30px;
+    left: 30px;
+    top: 50%;
+    transform: translate(0,-150px);
+}
+#white{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+    /* box-shadow: 0 0 15px #00ccff; */
+
+}
+#white:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#white:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#black{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: black;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#black:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#black:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#red{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: red;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#red:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#red:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#blue{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: blue;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#blue:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#blue:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#yellow{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: yellow;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#yellow:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#yellow:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#green{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: green;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#green:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#green:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+#grey{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: grey;
+    /* box-shadow: 0 0 15px #00ccff; */
+}
+#grey:hover {
+ box-shadow: 0 0 15px #00ccff;
+}
+#green:focus{
+ box-shadow: 0 0 15px #00ccff;
+}
+.range-wrap{
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 30px;
+    height: 150px;
+    margin-top: -75px;
+}
+.range-wrap input{
+    transform: rotate(
+        -90deg
+        );
+            width: 150px;
+            height: 20px;
+            margin: 0;
+            transform-origin: 75px 75px;
+            border-radius: 15px;
+            /* -webkit-appearance: none; */
+            outline: none;
+            position: relative;
+            
+}
+.range-wrap input::after{
+    /* display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-right: 150px solid #00CCFF;
+    border-left-width: 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 15px;
+    z-index: -1; */
+}
+.tools {
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tools button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid #eee;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 10px;
+    text-align: center;
+    color: #ccc;
+    line-height: 50px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    transition: 0.3s;
+}
+.tools button:hover{
+ box-shadow: 0 0 15px #00ccff;
+} 
+.tools button:focus{
+ box-shadow: 0 0 15px #00ccff;
+} 
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
